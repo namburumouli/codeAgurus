@@ -1,0 +1,177 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;  
+    position:absolute;
+    
+  }
+
+  .navbar .leftSide {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+  }
+  
+  .navbar .leftSide img {
+    width: 360px;
+    height: 120px;
+
+  }
+  
+  .navbar .rightSide {
+    flex: 50%;
+    width: 101px;
+    height: 28px;
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 23px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar .rightSide svg {
+    font-size: 40px;
+  }
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  
+  .navbar #close img {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+
+  .navbarbutton{
+  background-color: #DD1919;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  color: black;
+  padding: 10px;
+  border-radius: 30px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  text-align: center;
+  border-top-left-radius: 1.71875rem;
+  border-top-right-radius: 1.71875rem;
+  border-bottom-right-radius: 1.71875rem;
+  border-bottom-left-radius: 1.71875rem;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+
+  .visibility{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+      width: 70px;
+    }
+    .navbar .leftSide {
+      padding-left: 50px;
+    }
+
+    .navbar .leftSide img{
+      width: 260px;
+      height: 90px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+      display: none;
+    }
+  
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+      display: none;
+    }
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+  }
+  
+  @media only screen and (min-width: 600px)  and  (max-device-width: 900px){
+
+    .navbar{
+      zoom: 60%;
+    }
+
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  } 
+
+
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar {
+      zoom: 80%;
+    }
+    
+  }
+  
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .navbar {
+      zoom: normal;
+    }
+  }

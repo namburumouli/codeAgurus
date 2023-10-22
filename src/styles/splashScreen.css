@@ -1,0 +1,64 @@
+.splashscreen{
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 1;
+    left:0;
+    top: 0;
+    background-color: #161616;
+    transition: 1s;
+   
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 2s;
+}
+
+.logo.fade{
+    bottom:150px;
+    opacity: 0;
+    transition: ease-in-out 2s;
+
+}
+.visibility{
+    display: none;
+    /* height: -100vh; */
+    height: 0vh;
+    scroll-behavior: smooth;
+   
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .splashscreen {
+      zoom: 100%;
+    }
+  }
+  
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .splashscreen {
+      zoom: normal;
+    }
+  }

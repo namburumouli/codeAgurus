@@ -30,6 +30,10 @@ export default LandingPage;
 const Container = styled.div`
   width: 100%;
   height:470px;
+  
+  @media (min-width: 2560px) {
+    height:100%;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -54,6 +58,10 @@ const TextWrapper = styled.div`
   @media (min-width: 769px) {
     margin-left: 153px;
   }
+
+  // @media (min-width: 2500px) {
+  //   margin-left: -9%;
+  // }
 `;
 
 const Titletext = styled.div`
@@ -117,7 +125,7 @@ const Image = styled.img`
   z-index: 1;
 
   @media (max-width: 768px) {
-   height:320px;
+    height: 250px;
   }
 
    @media (max-width: 480px){

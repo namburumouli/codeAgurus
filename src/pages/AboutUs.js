@@ -65,7 +65,7 @@ const ContentWrapper = styled.div`
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  @media (min-width: 768px) {
+  @media (min-width: 768px) { 
     flex-direction: row;
     padding: 20px;
   }
@@ -79,6 +79,7 @@ const Description = styled.div`
   font-size: 18px; /* Adjusted font size for better readability */
   line-height: 1.5;
   max-width: 800px; /* Adjusted max-width for the description text */
+
 `;
 
 const CompanyText = styled.div`

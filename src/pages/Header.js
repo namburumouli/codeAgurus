@@ -21,7 +21,7 @@ const Header = () => {
         </MobileMenuButton>
         <NavWrapper mobileMenuOpen={menuOpen}>
           <NavText to="/#home">Home</NavText>
-          <NavText to="/#about">About us</NavText>
+          <NavText to="/#about">Who Are We</NavText>
           <NavText to="/#services">Services</NavText>
           <NavText to="/#certifications">Certifications</NavText>
           <LinkedInLink href="https://www.linkedin.com/in/code-augurs-3b2960240/">

@@ -33,12 +33,12 @@ const Services = () => {
       subtitle: "CRM, ERP, E-commerce",
       desc: "Stay ahead in the mobile era with our mobile application development expertise. We craft user-friendly, high-performance mobile apps that connect and engage your audience.",
     },
-    // {
-    //   image: serviceImg,
-    //   title: "Affordable IT Training, Powered by SBA Support",
-    //   subtitle: "CRM, ERP, E-commerce",
-    //   desc: "We believe that IT education should be accessible to all. That's why we've partnered with the Small Business Administration (SBA) to offer affordable IT training programs. With us, you'll receive top-tier training that doesn't break the bank.",
-    // }
+    {
+      image: serviceImg,
+      title: "Affordable IT Training, Powered by SBA Support",
+      subtitle: "CRM, ERP, E-commerce",
+      desc: "We believe that IT education should be accessible to all. That's why we've partnered with the Small Business Administration (SBA) to offer affordable IT training programs. With us, you'll receive top-tier training that doesn't break the bank.",
+    }
   ];
 
   return (
@@ -56,7 +56,7 @@ const Services = () => {
 export default Services;
 
 const Container = styled.div`
-  //width: 100%;
+  width: 100%;
   background: #171717;
 `;
 
@@ -91,18 +91,21 @@ const TitleText = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
-  //overflow-x: auto;
-  // margin-left:65px;
-  // margin-right:65px;
-  // margin: 0% 10%;
+  overflow-x: auto;
+  margin-left:65px;
+  margin-right:65px;
+  margin: 0% 10%;
 
   @media (max-width: 1024px) {
     flex-direction: column; /* Change to vertical layout for tablets and smaller screens */
     align-items: center; /* Center items vertically */
     margin-left: 0px;
     margin-right: 0px;
-    justify-content: center;
   }
+
+  @media (min-width: 2500px) {
+    justify-content:center;
+
+  }
+
 `;

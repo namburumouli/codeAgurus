@@ -1,27 +1,23 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { AFFILIATIONS } from "../constants/constants.js";
+import MPMSDC from "../assests/MPMSDC.png";
+import VOSB from "../assests/vosb.jpeg"
 
 const Solutions = () => {
 
   // Need to change the desc 
   const data = [
-    // {
-    //   title: "VET FIRST",
-    //   desc: "Our Vet First certification pays tribute to the brave men and women who have served our nation. It's a symbol of our respect and commitment to providing opportunities and support to veterans as they transition to civilian life. At CodeAugurs, we honor your service with our dedication to excellence.",
-    // },
-    // {
-    //   title: "Minority-Owned Business Certification",
-    //   desc: "We are a certified Minority-Owned Business, and diversity is more than just a word to us – it's our strength. This certification reflects our deep-rooted belief that diverse perspectives drive innovation and success. When you choose CodeAugurs, you're choosing a partner that celebrates and leverages diversity to deliver exceptional solutions.",
-    // },
-    // {
-    //   title: "8A Certification",
-    //   desc: "CodeAugurs is proudly 8A certified, demonstrating our eligibility to participate in the Small Business Administration's 8(a) Business Development Program. This certification empowers us to deliver top-tier services while contributing to the growth and prosperity of small businesses across the country.",
-    // },
-    // {
-    //   title: "Member of the National Veteran SBA Association",
-    //   desc: "We are also a proud member of the National Veteran Small Business Association, further solidifying our commitment to veterans and their success in the business world.",
-    // },
+    {
+      title: "VOSB Certified ",
+      desc: "We are a 51% veteran owned and Operated small business certified by the SBA. In Accordance with our operating model we highly encourage all Veterans , Transitioning veterans and members of US Armed forces reserves to reach out to us to schedule a one on one on any questions you may have on transitioning to a productive career in IT and everybody else for any collaborations",
+      img:VOSB
+    },
+    {
+      title: "MPMSDC Certified",
+      desc: "We are a certified Minority-Owned Business, and diversity is more than just a word to us – it's our strength. This certification reflects our deep-rooted belief that diverse perspectives drive innovation and success. When you choose CodeAugurs, you're choosing a partner that celebrates and leverages diversity to deliver exceptional solutions.",
+      img:MPMSDC
+    }
   ];
 
   const [index, setIndex] = useState(0);
@@ -69,7 +65,7 @@ const Solutions = () => {
   }, [index, data]);
 
   return (
-    <Container id="certifications">
+    <Container id="affiliations">
       <Wrapper>
         <StaticTitle>{AFFILIATIONS}</StaticTitle>
         <Divider /> 
@@ -84,8 +80,11 @@ const Solutions = () => {
             }
             return (
               <ContentItem key={i}>
-                <TitleCard>{e.title}</TitleCard>
-                <Span>{e.desc}</Span>
+                <Image src={e.img} alt={e.title} /> 
+                <TextWrapper>
+                  <TitleCard>{e.title}</TitleCard>
+                  <Span>{e.desc}</Span>
+                </TextWrapper>            
               </ContentItem>
             );
           })}
@@ -166,7 +165,7 @@ const ContentItem = styled.div`
   scroll-snap-align: start;
   min-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 20px;
 `;
 
@@ -204,4 +203,25 @@ const Span = styled.div`
   @media (max-width: 768px) {
     font-size: 12px;
   }
+`;
+
+const Image = styled.img`
+  max-width: 40%;
+  height: 100px;
+  flex-shrink: 0;
+  margin-right: 20px; /* Adjust the margin as needed */
+  z-index: 1;
+  margin:auto;
+  margin-top:18%;
+  margin-left:5%;
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+  }
+`;
+
+const TextWrapper = styled.div`
+  flex: 1;
+  margin-left: 20px; /* Adjust the margin as needed */
+  display: flex;
+  flex-direction: column;
 `;

@@ -5,7 +5,7 @@ import blub from "../assests/blub.png"; // Correct the typo in "assests" to "ass
 
 const WhatWeDoPage = () => {
   return (
-    <ComponentContainer>
+    <ComponentContainer id="whoarewe">
       <Title>{WHAT_WE_DO_TITLE}</Title>
       <ImageContainer>
         <Image src={blub} alt="blub" />

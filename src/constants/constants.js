@@ -8,8 +8,8 @@ export const TAG_LINE = "Where Technology Serves People";
 
 export const ABOUT_US_TITLE = "About us";
 export const ABOUT_US_DESC =
-  " Beneath which :- “ I want you for a career in IT “ Intimidated ? don't think you’re qualified for a transition to an IT career ? Contact us to schedule a 1 on 1 !!!  We provide excellent Training, certification and placement services that assists in your transition to a productive IT Career .";
-
+  "Intimidated ? don't think you’re qualified for a transition to an IT career ? Contact us at hr@codeaugurs.com  to schedule a 1 on 1 !!!  We provide excellent Training, certification and placement services that assists in your transition to a productive IT Career .";
+//I want you for a career in IT “ > need to keep below unckle sam 
 
 // Who are we 
 

@@ -25,7 +25,7 @@ function App() {
         <Companies />
         <WhatSetUsApartPage />
         <Services />
-        {/* <Solutions /> */}
+        <Solutions />
         <Fotter />
       </Container>
     </Router>

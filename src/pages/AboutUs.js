@@ -21,6 +21,7 @@ const AboutUs = () => {
           data-aos-duration="1000"
         >
           <Img src={unckleSam} alt="uncle sam" />
+          <Text>I Want you for a Career in IT </Text>
         </ImageWrapper>
         <Description
           data-aos="fade-left"
@@ -65,7 +66,7 @@ const ContentWrapper = styled.div`
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  @media (min-width: 768px) { 
+  @media (min-width: 768px) {
     flex-direction: row;
     padding: 20px;
   }
@@ -79,7 +80,23 @@ const Description = styled.div`
   font-size: 18px; /* Adjusted font size for better readability */
   line-height: 1.5;
   max-width: 800px; /* Adjusted max-width for the description text */
+`;
 
+const Text = styled.div`
+  margin: auto;
+  padding-top: 20px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px; /* Adjusted font size for better readability */
+  line-height: 1.5;
+  font-weight: bold;
+  background: var(
+    --DOML-gradient-1,
+    linear-gradient(267deg, #00f0ff 4.01%, #5200ff 57.55%, #ff2df7 114.97%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const CompanyText = styled.div`

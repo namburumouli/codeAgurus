@@ -21,9 +21,10 @@ const Header = () => {
         </MobileMenuButton>
         <NavWrapper mobileMenuOpen={menuOpen}>
           <NavText to="/#home">Home</NavText>
-          <NavText to="/#about">Who Are We</NavText>
+          <NavText to="/#whoarewe">Who Are We</NavText>
+          <NavText to="/#about">Careers</NavText>
           <NavText to="/#services">Services</NavText>
-          <NavText to="/#certifications">Certifications</NavText>
+          <NavText to="/#affiliations">Affiliations</NavText>
           <LinkedInLink href="https://www.linkedin.com/in/code-augurs-3b2960240/">
             <LinkedInIcon src={Linkedin} alt="LinkedIn Icon" />
           </LinkedInLink>
@@ -67,7 +68,7 @@ const NavWrapper = styled.div`
     right: ${(props) => (props.mobileMenuOpen ? "0" : "-100%")};
     background-color: #fff;
     transition: right 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     padding: 20px;
     display: ${(props) => (props.mobileMenuOpen ? "" : "none")};

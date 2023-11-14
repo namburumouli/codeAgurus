@@ -29,7 +29,11 @@ const AboutUs = () => {
           data-aos-offset="-100"
           data-aos-duration="1000"
         >
-          {ABOUT_US_DESC}
+          Intimidated ? don't think you’re qualified for a transition to an IT
+          career ?{" "}
+          <Span>Contact us at hr@codeaugurs.com to schedule a 1 on 1 !!!</Span>{" "}
+          We provide excellent Training, certification and placement services
+          that assists in your transition to a productive IT Career .
         </Description>
       </ContentWrapper>
       <WhatWeDo />
@@ -44,6 +48,17 @@ const Container = styled.div`
   background: #000000;
   height: 100%;
   width: 100%;
+`;
+
+const Span = styled.span`
+  font-weight: bold;
+  background: var(
+    --DOML-gradient-1,
+    linear-gradient(267deg, #00f0ff 4.01%, #5200ff 57.55%, #ff2df7 114.97%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const ImageWrapper = styled.div`
